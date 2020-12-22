@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-family: 'oxygen', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% 50%;
+    min-width: 798px;
+}
+
+.top {
+    grid-column: 1/3;
+    padding: 60px;
+    padding-top: 60px;
+    padding-left: 80px;
+    border: 1px solid #444444;
+}
+
+.top h1 {
+    font-size: 48px;
+    color: #7123a0;
+    margin: 10px;
+}
+
+.top h2 {
+    font-size: 26px;
+    color: #77bcb8;
+    margin: 10px;
+}
+
+.top p {
+    font-size: 20px;
+    color: #ababab;
+    margin: 10px;
+}
+
+.bottomleft {
+    background-color: #7123a0;
+    padding: 60px;
+    padding-left: 80px;
+    color: #ffff;
+}
+
+.bottomleft h2 {
+    margin: 10px;
+}
+
+.bottomleft h3 {
+    margin: 10px;
+}
+
+.bottomleft p {
+    margin: 10px;
+}
+
+.joinbutton {
+    margin: 10px;
+    width: 20%;
+
+}
+
+.bottomright {
+    background-color: #8f58b1;
+    padding: 60px;
+    color: #fff;
+}
