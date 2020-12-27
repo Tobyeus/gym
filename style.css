@@ -4,8 +4,8 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    width: 100%;
     font-family: 'oxygen', sans-serif;
+    font-weight: 400;
 }
 
 html, body {
@@ -15,64 +15,194 @@ html, body {
 .page-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 50% 50%;
-    min-width: 798px;
-}
-
-.top {
-    grid-column: 1/3;
-    padding: 60px;
-    padding-top: 60px;
-    padding-left: 80px;
-    border: 1px solid #444444;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
 }
 
 .top h1 {
-    font-size: 48px;
+    margin: 5% 7%;
+    font-size: 20px;
     color: #7123a0;
-    margin: 10px;
 }
 
 .top h2 {
-    font-size: 26px;
+    margin: 5% 7%;
+    font-size: 16px;
     color: #77bcb8;
-    margin: 10px;
 }
 
 .top p {
-    font-size: 20px;
+    margin: 7%;
+    font-size: 15px;
     color: #ababab;
-    margin: 10px;
 }
-
 .bottomleft {
     background-color: #7123a0;
-    padding: 60px;
-    padding-left: 80px;
     color: #ffff;
 }
 
-.bottomleft h2 {
-    margin: 10px;
+.bottomleft h1 {
+    margin: 7%;
+    font-size: 16px;
 }
 
-.bottomleft h3 {
-    margin: 10px;
+.pricing {
+    font-size: 16px;
+    margin: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.pricing h2 {
+    font-size: 24px;
+}
+
+.pricing h3 {
+    margin-left: 5px;
+    color: #8f58b1;
+    font-size: 16px;
 }
 
 .bottomleft p {
-    margin: 10px;
+    margin-left: 7%;
+    font-size: 14px;
 }
 
 .joinbutton {
-    margin: 10px;
-    width: 20%;
-
+    margin: 7%;
+    margin-top: 0px;
+    width: 80%;
+    background-color: #77bcb8;
+    border: none;
+    color: #ffff;
+    font-size: 20px;
+    border-radius: 4px;
 }
 
 .bottomright {
     background-color: #8f58b1;
-    padding: 60px;
     color: #fff;
+    font-size: 16px;
+}
+
+.bottomright h3, p {
+    margin: 7%;
+}
+
+.bottomright p {
+    font-size: 14px;
+}
+
+
+
+@media screen and (min-width:311px){
+
+    * {
+        font-weight: 400;
+    }
+
+    .page-container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 50% 50%;
+        border:none;
+    }
+
+    .top {
+        grid-column: 1/3;
+        padding: 60px;
+        padding-top: 60px;
+        padding-left: 80px;
+    }
+
+    .top h1 {
+        font-size: 48px;
+        color: #7123a0;
+        margin: 10px;
+    }
+
+    .top h2 {
+        font-size: 26px;
+        color: #77bcb8;
+        margin: 10px;
+    }
+
+    .top p {
+        font-size: 20px;
+        color: #ababab;
+        margin: 10px;
+    }
+
+    .bottomleft {
+        background-color: #7123a0;
+        padding: 30px;
+        padding-left: 80px;
+        color: #ffff;
+    }
+
+    .bottomleft h1 {
+        margin: 10px;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .pricing {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 28px;
+        margin: 10px;
+    }
+
+    .pricing h2 {
+        flex-basis: auto;
+        width: auto;
+        font-size: 28px;
+        margin-right: 0px;
+    }
+
+    .pricing h3 {
+        flex-basis: auto;
+        width: auto;
+        color: #8f58b1;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .bottomleft p {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .joinbutton {
+        margin: 10px;
+        width: 90%;
+        background-color: #77bcb8;
+        border: none;
+        color: #ffff;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 20px;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+
+    .bottomright {
+        background-color: #8f58b1;
+        padding: 30px;
+        padding-left: 60px;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .bottomright h3, p {
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+
+    .bottomright p {
+        font-size: 16px;
+    }
 }
